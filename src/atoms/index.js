@@ -1,0 +1,1 @@
+export { default as AtomComponent } from './atom-component';
