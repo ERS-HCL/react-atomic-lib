@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import { AtomComponent, MoleculeComponent } from 'react-atomic-lib';
+import { AtomComponent } from 'react-atomic-lib/atoms';
+import { MoleculeComponent } from 'react-atomic-lib/molecules';
 import './App.css';
 
 class App extends Component {

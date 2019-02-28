@@ -6,6 +6,7 @@ module.exports = {
 		'!src/**/*.stories.{js,jsx}',
 		'!**/node_modules/**',
 		'!build/**',
+		'!example/**',
 	],
 	coverageReporters: ['lcov', 'text'],
 	reporters: [
@@ -15,4 +16,5 @@ module.exports = {
 	setupFiles: ['./setupTests.js'],
 	snapshotSerializers: ['enzyme-to-json/serializer'],
 	verbose: true,
+	testPathIgnorePatterns: ["example"]
 };

@@ -7810,13 +7810,13 @@ react-app-polyfill@^0.2.1:
     raf "3.4.1"
     whatwg-fetch "3.0.0"
 
-"react-atomic-lib@..\\react-atomic-lib-0.0.1.tgz":
-  version "0.0.1"
-  resolved "..\\react-atomic-lib-0.0.1.tgz#e28ccf82615892b97987b8d8f9aec58b02c0c621"
+"react-atomic-lib@..\\dist\\react-atomic-lib-0.0.2.tgz":
+  version "0.0.2"
+  resolved "..\\dist\\react-atomic-lib-0.0.2.tgz#a6a6534dd78ec4c13b7d3f16e36f689724ba776f"
 
-"react-atomic-lib@..\\react-atomic-lib-v0.0.1.tgz":
-  version "0.0.1"
-  resolved "..\\react-atomic-lib-v0.0.1.tgz#130f6c46f8822578f9173220727da927d39a61bc"
+"react-atomic-lib@..\\dist\\react-atomic-lib-v0.0.2.tgz":
+  version "0.0.2"
+  resolved "..\\dist\\react-atomic-lib-v0.0.2.tgz#0ae58ccc3e1cb9d28686ba31c047404890c33132"
 
 react-dev-utils@^7.0.3:
   version "7.0.3"
