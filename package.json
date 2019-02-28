@@ -1,6 +1,6 @@
 {
 	"name": "react-atomic-lib",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "A react component library based on material-ui",
 	"author": "Tarun Kumar Sukhu",
 	"license": "MIT",
@@ -12,6 +12,7 @@
 		"dist": "cd dist && npm publish",
 		"build": "rollup -c --environment BUILD:production",
 		"start": "rollup -c -w",
+		"prepublish": "npm run build",
 		"predeploy": "cd example && npm install && npm run build",
 		"deploy": "gh-pages -d example/build",
 		"storybook": "start-storybook -p 9001"
@@ -71,12 +72,16 @@
 		"style-loader": "^0.23.1"
 	},
 	"files": [
-			"atoms.es.js",
-			"atoms.js",
-			"index.js",
-			"index.es.js",
-			"molecules.es.js",
-			"molecules.js"
+		"atoms.es.js",
+		"atoms.js",
+		"index.js",
+		"index.es.js",
+		"molecules.es.js",
+		"molecules.js",
+		"templates.js",
+		"templates.es.js",
+		"pages.js",
+		"pages.es.js"
 	],
 	"private": false
 }
