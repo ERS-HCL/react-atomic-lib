@@ -9,7 +9,6 @@ import resolve from 'rollup-plugin-node-resolve';
 const externals = ['@material-ui/core', 'react'];
 const plugins = [
 	external(),
-
 	postcss({
 		modules: true
 	}),
@@ -61,6 +60,36 @@ export default [
 			},
 			{
 				file: __dirname + '/dist/molecules.es.js',
+				format: 'es'
+			}
+		],
+		plugins,
+		external: externals
+	},
+	{
+		input: 'src/templates/index.js',
+		output: [
+			{
+				file: __dirname + '/dist/templates.js',
+				format: 'cjs'
+			},
+			{
+				file: __dirname + '/dist/templates.es.js',
+				format: 'es'
+			}
+		],
+		plugins,
+		external: externals
+	},
+	{
+		input: 'src/pages/index.js',
+		output: [
+			{
+				file: __dirname + '/dist/pages.js',
+				format: 'cjs'
+			},
+			{
+				file: __dirname + '/dist/pages.es.js',
 				format: 'es'
 			}
 		],

@@ -7814,9 +7814,9 @@ react-app-polyfill@^0.2.1:
   version "0.0.2"
   resolved "..\\dist\\react-atomic-lib-0.0.2.tgz#a6a6534dd78ec4c13b7d3f16e36f689724ba776f"
 
-"react-atomic-lib@..\\dist\\react-atomic-lib-v0.0.2.tgz":
-  version "0.0.2"
-  resolved "..\\dist\\react-atomic-lib-v0.0.2.tgz#0ae58ccc3e1cb9d28686ba31c047404890c33132"
+"react-atomic-lib@..\\dist\\react-atomic-lib-v0.0.3.tgz":
+  version "0.0.3"
+  resolved "..\\dist\\react-atomic-lib-v0.0.3.tgz#9543ab6940fcdeacfc5b6b83ee8a12954aa20a5c"
 
 react-dev-utils@^7.0.3:
   version "7.0.3"

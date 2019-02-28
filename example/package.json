@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "react": "^16.8.3",
-    "react-atomic-lib": "..\\dist\\react-atomic-lib-0.0.2.tgz",
+    "react-atomic-lib": "..\\dist\\react-atomic-lib-v0.0.3.tgz",
     "react-dom": "^16.8.3",
     "react-scripts": "2.1.5"
   },
