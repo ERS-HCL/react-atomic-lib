@@ -67,6 +67,21 @@ export default [
 		external: externals
 	},
 	{
+		input: 'src/organisms/index.js',
+		output: [
+			{
+				file: __dirname + '/dist/organisms.js',
+				format: 'cjs'
+			},
+			{
+				file: __dirname + '/dist/organisms.es.js',
+				format: 'es'
+			}
+		],
+		plugins,
+		external: externals
+	},
+	{
 		input: 'src/templates/index.js',
 		output: [
 			{

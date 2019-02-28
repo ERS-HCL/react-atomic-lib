@@ -78,6 +78,8 @@
 		"index.es.js",
 		"molecules.es.js",
 		"molecules.js",
+		"organisms.es.js",
+		"organisms.js",
 		"templates.js",
 		"templates.es.js",
 		"pages.js",

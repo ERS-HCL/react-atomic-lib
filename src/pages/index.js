@@ -1,1 +1,1 @@
-export { default as MoleculeComponent } from './page-component';
+export { default as PageComponent } from './page-component';
