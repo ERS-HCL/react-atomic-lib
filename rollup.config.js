@@ -6,13 +6,6 @@ import resolve from 'rollup-plugin-node-resolve';
 import { terser } from 'rollup-plugin-terser';
 import pkg from './package.json';
 
-const includePathOptions = {
-  include: {},
-  paths: ['src'],
- // external: [],
-  extensions: ['.js', '.jsx']
-};
-
 export default {
   input: 'src/index.js',
   output: [
@@ -27,7 +20,7 @@ export default {
   ],
   plugins: [
     external(),
-    
+
     postcss({
       modules: true
     }),
