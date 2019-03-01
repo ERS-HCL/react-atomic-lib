@@ -1,6 +1,6 @@
 {
 	"name": "react-atomic-lib",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "A react component library based on material-ui",
 	"author": "Tarun Kumar Sukhu",
 	"license": "MIT",
@@ -20,7 +20,8 @@
 	"dependencies": {},
 	"peerDependencies": {
 		"@material-ui/core": "^3.9.2",
-		"prop-types": "^15.7.2"
+		"prop-types": "^15.7.2",
+		"typeface-montserrat": "^0.0.54"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.3.4",
