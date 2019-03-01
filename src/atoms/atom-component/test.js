@@ -1,6 +1,6 @@
 import React from 'react';
 import { createShallow } from '@material-ui/core/test-utils';
-import ExampleComponent from './atoms/atom-component';
+import ExampleComponent from '.';
 
 describe('ExampleComponent', () => {
   let shallow;

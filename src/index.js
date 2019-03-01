@@ -1,2 +1,3 @@
-export { default as AtomComponent } from './atoms/atom-component';
-export { default as MoleculeComponent } from './molecules/molecule-component';
+export * from './atoms';
+export * from './molecules';
+export * from './themes';

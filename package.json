@@ -9,15 +9,17 @@
 	"scripts": {
 		"test": "jest",
 		"copypackage": "copyfiles -f package.json .npmignore .npmrc dist",
-		"dist": "cd dist && npm publish",
-		"build": "rollup -c --environment BUILD:production",
+		"dist": "copypackage && cd dist && npm publish",
+		"build": "rimraf dist && rollup -c --environment BUILD:production",
 		"start": "rollup -c -w",
 		"prepublish": "npm run build",
 		"predeploy": "cd example && npm install && npm run build",
 		"deploy": "gh-pages -d example/build",
 		"storybook": "start-storybook -p 9001"
 	},
-	"dependencies": {},
+	"dependencies": {
+		"rimraf": "^2.6.3"
+	},
 	"peerDependencies": {
 		"@material-ui/core": "^3.9.2",
 		"prop-types": "^15.7.2",
@@ -84,7 +86,9 @@
 		"templates.js",
 		"templates.es.js",
 		"pages.js",
-		"pages.es.js"
+		"pages.es.js",
+		"themes.js",
+		"themes.es.js"
 	],
 	"private": false
 }

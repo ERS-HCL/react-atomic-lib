@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^3.9.2",
     "react": "^16.8.3",
-    "react-atomic-lib": "..\\dist\\react-atomic-lib-v0.0.3.tgz",
+    "react-atomic-lib": "..\\dist\\react-atomic-lib-v0.0.4.tgz",
     "react-dom": "^16.8.3",
-    "react-scripts": "2.1.5"
+    "react-scripts": "2.1.5",
+    "typeface-montserrat": "^0.0.54"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -110,5 +110,20 @@ export default [
 		],
 		plugins,
 		external: externals
+	},
+	{
+		input: 'src/themes/index.js',
+		output: [
+			{
+				file: __dirname + '/dist/themes.js',
+				format: 'cjs'
+			},
+			{
+				file: __dirname + '/dist/themes.es.js',
+				format: 'es'
+			}
+		],
+		plugins,
+		external: externals
 	}
 ];
