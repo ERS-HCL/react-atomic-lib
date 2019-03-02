@@ -1,4 +1,5 @@
 import { createMuiTheme } from '@material-ui/core';
+import 'typeface-montserrat';
 
 /**
  * customize the material-ui theme.
