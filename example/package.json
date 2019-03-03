@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@material-ui/core": "^3.9.2",
+		"@material-ui/core": "^3.9.2",
+		"@material-ui/docs": "^3.0.0-alpha.9",
+		"@material-ui/icons": "^3.0.2",
     "react": "^16.8.3",
     "react-atomic-lib": "..\\dist\\react-atomic-lib-v0.0.4.tgz",
     "react-dom": "^16.8.3",

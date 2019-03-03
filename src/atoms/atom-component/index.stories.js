@@ -6,4 +6,4 @@ import ExampleComponent from '.';
 
 storiesOf('atoms', module)
 	.addDecorator(story => <MuiThemeProvider theme={BasicTheme}>{story()}</MuiThemeProvider>)
-  .add('Example Component', () => (<ExampleComponent />));
+  .add('buttons', () => (<ExampleComponent />));
