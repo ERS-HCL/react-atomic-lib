@@ -5,8 +5,8 @@ const path = require('path');
  * @param {object} baseConfig
  * @returns {object}
  */
-module.exports = (baseConfig) => {
-	baseConfig.module.rules.push({
+module.exports = ({ config }) => {
+	config.module.rules.push({
 		enforce: 'pre',
 		include: [path.resolve(__dirname, '../src')],
 		loaders: [
@@ -17,7 +17,7 @@ module.exports = (baseConfig) => {
 		test: [/\.stories\.(js|jsx)$/],
 	});
 
-	baseConfig.module.rules.push({
+	/* config.module.rules.push({
 		test: /\.(gif|jpe?g|png|svg)$/i,
 		use: [
 			'file-loader',
@@ -31,12 +31,12 @@ module.exports = (baseConfig) => {
 		],
 	});
 
-	baseConfig.module.rules.push({
+	config.module.rules.push({
 		test: /\.css$/,
 		use: ['style-loader', 'css-loader'],
 	});
 
-	baseConfig.module.rules.push({
+	config.module.rules.push({
 		test: /\.(eot|svg|ttf|woff(2)?)(\?v=\d+\.\d+\.\d+)?$/,
 		use: [
 			{
@@ -47,7 +47,7 @@ module.exports = (baseConfig) => {
 				},
 			},
 		],
-	});
+	}); */
 
-	return baseConfig;
+	return config;
 };

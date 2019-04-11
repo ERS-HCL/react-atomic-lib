@@ -1,136 +1,76 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import MarkdownElement from '@material-ui/docs/MarkdownElement';
-import Grid from '@material-ui/core/Grid';
-import Avatar from '@material-ui/core/Avatar';
 import Chip from '@material-ui/core/Chip';
-import FaceIcon from '@material-ui/icons/Face';
-import DoneIcon from '@material-ui/icons/Done';
+import Paper from '@material-ui/core/Paper';
+import TagFacesIcon from '@material-ui/icons/TagFaces';
 
 const styles = (theme) => ({
 	root: {
-		flexGrow: 1
+		display: 'flex',
+		justifyContent: 'center',
+		flexWrap: 'wrap',
+		padding: theme.spacing.unit / 2
 	},
-	control: {
-		padding: theme.spacing.unit * 2
-	},
-	chipWrapper: {
-		marginBottom: theme.spacing.unit * 5
-	},
-	markDown: {
-		backgroundColor: 'black'
+	chip: {
+		margin: theme.spacing.unit / 2
 	}
 });
 
-const ChipWrapper = ({
-	classes,
-	color,
-	onDelete,
-	avatar,
-	icon,
-	variant,
-	handleDelete
-}) => {
-	const colorToCode = color !== 'default' ? `color="${color}" ` : '';
-	const variantToCode = variant !== 'default' ? `variant="${variant}" ` : '';
+class ChipsArray extends React.Component {
+	state = {
+		chipData: [
+			{ key: 0, label: 'Angular' },
+			{ key: 1, label: 'jQuery' },
+			{ key: 2, label: 'Polymer' },
+			{ key: 3, label: 'React' },
+			{ key: 4, label: 'Vue.js' }
+		]
+	};
 
-	let onDeleteToCode;
-	switch (onDelete) {
-		case 'none':
-			onDeleteToCode = '';
-			break;
-		case 'custom':
-			onDeleteToCode = 'deleteIcon={<DoneIcon />} onDelete={handleDelete} ';
-			break;
-		default:
-			onDeleteToCode = 'onDelete={handleDelete} ';
-			break;
-	}
+	handleDelete = (data) => () => {
+		if (data.label === 'React') {
+			alert('Why would you want to delete React?! :)'); // eslint-disable-line no-alert
+			return;
+		}
 
-	let iconToCode;
-	let iconToPlayground;
-	switch (icon) {
-		case 'none':
-			iconToCode = '';
-			break;
-		default:
-			iconToCode = 'icon={<FaceIcon />} ';
-			iconToPlayground = <FaceIcon />;
-			break;
-	}
+		this.setState((state) => {
+			const chipData = [...state.chipData];
+			const chipToDelete = chipData.indexOf(data);
+			chipData.splice(chipToDelete, 1);
+			return { chipData };
+		});
+	};
 
-	let avatarToCode;
-	let avatarToPlayground;
-	switch (avatar) {
-		case 'none':
-			avatarToCode = '';
-			break;
-		case 'img':
-			avatarToCode =
-				'avatar={<Avatar src="https://randomuser.me/api/portraits/thumb/men/63.jpg" />} ';
-			avatarToPlayground = (
-				<Avatar src="https://randomuser.me/api/portraits/thumb/men/63.jpg" />
-			);
-			break;
-		case 'letter':
-			avatarToCode = 'avatar={<Avatar>FH</Avatar>} ';
-			avatarToPlayground = <Avatar>FH</Avatar>;
-			break;
-		default:
-			avatarToCode = 'avatar={<Avatar><FaceIcon /></Avatar>} ';
-			avatarToPlayground = (
-				<Avatar>
-					<FaceIcon />
-				</Avatar>
-			);
-			break;
-	}
+	render() {
+		const { classes } = this.props;
 
-	if (avatar !== 'none') {
-		iconToCode = '';
-		iconToPlayground = null;
-	}
+		return (
+			<Paper className={classes.root}>
+				{this.state.chipData.map((data) => {
+					let icon = null;
 
-	const code = `
-\`\`\`jsx
-<Chip ${colorToCode}${onDeleteToCode}${avatarToCode}${iconToCode}${variantToCode}/>
-\`\`\`
-`;
+					if (data.label === 'React') {
+						icon = <TagFacesIcon />;
+					}
 
-	return (
-		<Grid container className={classes.root}>
-			<Grid item xs={12}>
-				<Grid container justify="center" alignItems="center" spacing={40}>
-					<Grid item className={classes.chipWrapper}>
+					return (
 						<Chip
-							label="Awesome Chip Component"
-							color={color}
-							deleteIcon={onDelete === 'custom' ? <DoneIcon /> : undefined}
-							onDelete={onDelete !== 'none' ? handleDelete : undefined}
-							avatar={avatarToPlayground}
-							icon={iconToPlayground}
-							variant={variant}
+							key={data.key}
+							icon={icon}
+							label={data.label}
+							onDelete={this.handleDelete(data)}
+							className={classes.chip}
 						/>
-					</Grid>
-				</Grid>
-			</Grid>
-			<Grid item xs={12}>
-				<MarkdownElement text={code} className={classes.markDown} />
-			</Grid>
-		</Grid>
-	);
-};
+					);
+				})}
+			</Paper>
+		);
+	}
+}
 
-ChipWrapper.propTypes = {
+ChipsArray.propTypes = {
 	classes: PropTypes.object.isRequired
 };
 
-ChipWrapper.defaultProps = {
-	color: 'default',
-	onDelete: 'none',
-	avatar: 'none',
-	icon: 'none',
-	variant: 'default'
-};
-export default withStyles(styles)(ChipWrapper);
+export default withStyles(styles)(ChipsArray);
