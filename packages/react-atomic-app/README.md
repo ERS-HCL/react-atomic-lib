@@ -1,18 +1,4 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-## Setup
-
-First build the react-atomic-libary
-
-```
-yarn build
-```
-
-There after to test locally without exporting to the npm registry use the `pack` command to create the local packaged library
-
-```
-yarn pack
-```
-
 
 ## Available Scripts
 

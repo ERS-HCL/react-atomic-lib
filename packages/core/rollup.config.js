@@ -25,11 +25,11 @@ export default [
 		input: 'src/index.js',
 		output: [
 			{
-				file: __dirname + '/dist/index.js',
+				file: __dirname + '/dist/core/index.js',
 				format: 'cjs'
 			},
 			{
-				file: __dirname + '/dist/index.es.js',
+				file: __dirname + '/dist/core/index.es.js',
 				format: 'es'
 			}
 		],
@@ -40,11 +40,11 @@ export default [
 		input: 'src/atoms/index.js',
 		output: [
 			{
-				file: __dirname + '/dist/atoms.js',
+				file: __dirname + '/dist/core/atoms.js',
 				format: 'cjs'
 			},
 			{
-				file: __dirname + '/dist/atoms.es.js',
+				file: __dirname + '/dist/core/atoms.es.js',
 				format: 'es'
 			}
 		],
@@ -55,11 +55,11 @@ export default [
 		input: 'src/molecules/index.js',
 		output: [
 			{
-				file: __dirname + '/dist/molecules.js',
+				file: __dirname + '/dist/core/molecules.js',
 				format: 'cjs'
 			},
 			{
-				file: __dirname + '/dist/molecules.es.js',
+				file: __dirname + '/dist/core/molecules.es.js',
 				format: 'es'
 			}
 		],
@@ -70,11 +70,11 @@ export default [
 		input: 'src/organisms/index.js',
 		output: [
 			{
-				file: __dirname + '/dist/organisms.js',
+				file: __dirname + '/dist/core/organisms.js',
 				format: 'cjs'
 			},
 			{
-				file: __dirname + '/dist/organisms.es.js',
+				file: __dirname + '/dist/core/organisms.es.js',
 				format: 'es'
 			}
 		],
@@ -85,11 +85,11 @@ export default [
 		input: 'src/templates/index.js',
 		output: [
 			{
-				file: __dirname + '/dist/templates.js',
+				file: __dirname + '/dist/core/templates.js',
 				format: 'cjs'
 			},
 			{
-				file: __dirname + '/dist/templates.es.js',
+				file: __dirname + '/dist/core/templates.es.js',
 				format: 'es'
 			}
 		],
@@ -100,11 +100,11 @@ export default [
 		input: 'src/pages/index.js',
 		output: [
 			{
-				file: __dirname + '/dist/pages.js',
+				file: __dirname + '/dist/core/pages.js',
 				format: 'cjs'
 			},
 			{
-				file: __dirname + '/dist/pages.es.js',
+				file: __dirname + '/dist/core/pages.es.js',
 				format: 'es'
 			}
 		],
@@ -115,11 +115,11 @@ export default [
 		input: 'src/themes/index.js',
 		output: [
 			{
-				file: __dirname + '/dist/themes.js',
+				file: __dirname + '/dist/core/themes.js',
 				format: 'cjs'
 			},
 			{
-				file: __dirname + '/dist/themes.es.js',
+				file: __dirname + '/dist/core/themes.es.js',
 				format: 'es'
 			}
 		],
