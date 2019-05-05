@@ -1,9 +1,7 @@
 import React from "react";
 import logo from "./logo.svg";
 import { MuiThemeProvider } from "@material-ui/core/styles";
-import { BaseTheme, MoleculeComponent, AtomComponent } from "@react-atomic-lib/core";
-/* import { MoleculeComponent } from "@react-atomic-lib/core/molecules";
-import { AtomComponent } from "@react-atomic-lib/core/atoms"; */
+import { AtomComponent, BaseTheme, MoleculeComponent, BasicHero } from "@react-atomic-lib/core";
 import "./App.css";
 
 function App() {
@@ -24,6 +22,7 @@ function App() {
 				</a>
 			</header>
 			<MuiThemeProvider theme={BaseTheme}>
+				<BasicHero />
 				<AtomComponent />
 				<MoleculeComponent />
 			</MuiThemeProvider>

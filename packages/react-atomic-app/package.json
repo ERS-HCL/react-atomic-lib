@@ -5,6 +5,7 @@
   "dependencies": {
     "@material-ui/core": "^3.9.3",
     "@material-ui/icons": "^3.0.2",
+    "@material-ui/system": "^3.0.0-alpha.2",
     "@react-atomic-lib/core": "*",
     "cross-env": "^5.2.0",
     "react": "^16.8.6",

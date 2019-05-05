@@ -15,11 +15,13 @@
 		"storybook": "start-storybook -p 9001"
 	},
 	"dependencies": {
+		"classnames": "^2.2.6",
 		"rimraf": "^2.6.3"
 	},
 	"peerDependencies": {
 		"@material-ui/core": "^3.9.3",
 		"@material-ui/icons": "^3.0.2",
+		"@material-ui/system": "^3.0.0-alpha.2",
 		"prop-types": "^15.7.2",
 		"typeface-montserrat": "^0.0.54"
 	},

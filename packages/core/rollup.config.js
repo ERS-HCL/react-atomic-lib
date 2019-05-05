@@ -40,11 +40,11 @@ export default [
 		input: 'src/atoms/index.js',
 		output: [
 			{
-				file: __dirname + '/dist/core/atoms.js',
+				file: __dirname + '/dist/core/atoms/index.js',
 				format: 'cjs'
 			},
 			{
-				file: __dirname + '/dist/core/atoms.es.js',
+				file: __dirname + '/dist/core/atoms/index.es.js',
 				format: 'es'
 			}
 		],
@@ -55,11 +55,11 @@ export default [
 		input: 'src/molecules/index.js',
 		output: [
 			{
-				file: __dirname + '/dist/core/molecules.js',
+				file: __dirname + '/dist/core/molecules/index.js',
 				format: 'cjs'
 			},
 			{
-				file: __dirname + '/dist/core/molecules.es.js',
+				file: __dirname + '/dist/core/molecules/index.es.js',
 				format: 'es'
 			}
 		],
@@ -70,11 +70,11 @@ export default [
 		input: 'src/organisms/index.js',
 		output: [
 			{
-				file: __dirname + '/dist/core/organisms.js',
+				file: __dirname + '/dist/core/organisms/index.js',
 				format: 'cjs'
 			},
 			{
-				file: __dirname + '/dist/core/organisms.es.js',
+				file: __dirname + '/dist/core/organisms/index.es.js',
 				format: 'es'
 			}
 		],
@@ -85,11 +85,11 @@ export default [
 		input: 'src/templates/index.js',
 		output: [
 			{
-				file: __dirname + '/dist/core/templates.js',
+				file: __dirname + '/dist/core/templates/index.js',
 				format: 'cjs'
 			},
 			{
-				file: __dirname + '/dist/core/templates.es.js',
+				file: __dirname + '/dist/core/templates/index.es.js',
 				format: 'es'
 			}
 		],
@@ -100,11 +100,11 @@ export default [
 		input: 'src/pages/index.js',
 		output: [
 			{
-				file: __dirname + '/dist/core/pages.js',
+				file: __dirname + '/dist/core/pages/index.js',
 				format: 'cjs'
 			},
 			{
-				file: __dirname + '/dist/core/pages.es.js',
+				file: __dirname + '/dist/core/pages/index.es.js',
 				format: 'es'
 			}
 		],
@@ -115,11 +115,11 @@ export default [
 		input: 'src/themes/index.js',
 		output: [
 			{
-				file: __dirname + '/dist/core/themes.js',
+				file: __dirname + '/dist/core/themes/index.js',
 				format: 'cjs'
 			},
 			{
-				file: __dirname + '/dist/core/themes.es.js',
+				file: __dirname + '/dist/core/themes/index.es.js',
 				format: 'es'
 			}
 		],
